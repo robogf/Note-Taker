@@ -4,7 +4,7 @@ const fs = require('fs');
 let notes = require('./db/db.json');
 const uniqid = require('uniqid');
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
